@@ -11,22 +11,22 @@ from logging.handlers import RotatingFileHandler
 load_dotenv("config.env")
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5643993589:AAGZWx7R2-wWBIUr_4LBP56z9Nt-71XCh48")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 # API ID Anda dari my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "9501078"))
+APP_ID = int(os.environ.get("APP_ID", ""))
 
 # API Hash Anda dari my.telegram.org
-API_HASH = os.environ.get("API_HASH", "eb5f93237cb7fca5211ac0072eae6957")
+API_HASH = os.environ.get("API_HASH", "")
 
 # ID Channel Database
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001564179004"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "hiohioku")
+OWNER = os.environ.get("OWNER", "")
 
 # Protect Content
-PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "True"))
+PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", ""))
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -36,11 +36,11 @@ HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://kadexanggra:kadexanggra123@cluster0.np9njgz.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001699425180"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001738938847"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", ""))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", ""))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
